@@ -18,12 +18,12 @@ const TestDetailPage = () => {
     }
 
     return (
-        <div className="min-h-screen bg-white font-sans p-8">
+        <div className="min-h-screen bg-white font-sans p-4 md:p-8">
             <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-google-blue mb-8 font-bold">
                 <ArrowLeft className="w-5 h-5" /> Back
             </button>
-            <div className="max-w-4xl mx-auto border border-google-border rounded-3xl p-8 shadow-sm">
-                <h1 className="text-4xl font-black mb-6 text-[#202124]">{test.name}</h1>
+            <div className="max-w-4xl mx-auto border border-google-border rounded-3xl p-4 md:p-8 shadow-sm">
+                <h1 className="text-3xl md:text-4xl font-black mb-6 text-[#202124]">{test.name}</h1>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="flex items-center gap-4 p-4 border rounded-2xl">
                         <Zap className="text-google-blue w-6 h-6"/>

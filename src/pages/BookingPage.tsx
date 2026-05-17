@@ -3,11 +3,11 @@ import { ArrowLeft, Calendar, ClipboardCheck } from "lucide-react";
 
 const BookingPage = () => {
     return (
-        <div className="min-h-screen bg-white font-sans p-8">
+        <div className="min-h-screen bg-white font-sans p-4 md:p-8">
              <a href="/" className="flex items-center gap-2 text-google-blue mb-8 font-bold">
                 <ArrowLeft className="w-5 h-5" /> Back to Home
             </a>
-            <div className="max-w-xl mx-auto border border-google-border rounded-2xl p-8 shadow-sm">
+            <div className="max-w-xl mx-auto border border-google-border rounded-2xl p-4 md:p-8 shadow-sm">
                 <h1 className="text-3xl font-black mb-6 text-[#202124]">Request Appointment</h1>
                 <form className="space-y-4">
                     <input type="text" placeholder="Full Name" className="w-full p-4 border rounded-xl" />

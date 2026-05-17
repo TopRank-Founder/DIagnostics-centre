@@ -433,9 +433,7 @@ export default function App() {
 
   useEffect(() => {
     // Lead Conversion Tracking / Business Intelligence Simulation
-    const trackEvent = (eventName: string, details?: any) => {
-      console.log(`[BI TRACKING] Event: ${eventName}`, details);
-    };
+    const trackEvent = (_eventName: string, _details?: any) => {};
 
     // SEO: Inject Local Business JSON-LD for Search Engines
     const schemaData = {
@@ -1152,16 +1150,39 @@ export default function App() {
                       alt="Agilus Lab Mohali Main" 
                       className="w-full h-full object-cover" 
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="relative overflow-hidden">
-                    <img src={centerPhotos[1].url} alt="Fully automated clinical analyzers at SRL Diagnostics Lab Mohali" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img
+                      src={centerPhotos[1].url}
+                      alt="Fully automated clinical analyzers at SRL Diagnostics Lab Mohali"
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div className="relative overflow-hidden">
-                    <img src={centerPhotos[2].url} alt="Professional phlebotomist preparing home blood sample collection kit Mohali" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img
+                      src={centerPhotos[2].url}
+                      alt="Professional phlebotomist preparing home blood sample collection kit Mohali"
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div className="relative overflow-hidden">
-                    <img src={centerPhotos[3].url} alt="Specialized testing room with high tech medical equipment at Agilus Diagnostics Sector 69" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img
+                      src={centerPhotos[3].url}
+                      alt="Specialized testing room with high tech medical equipment at Agilus Diagnostics Sector 69"
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white font-black text-sm">
                         +38
                     </div>
@@ -1238,7 +1259,7 @@ export default function App() {
                       <div className="flex -space-x-2">
                         {[1, 2, 3, 4].map(i => (
                           <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-google-light-grey flex items-center justify-center overflow-hidden">
-                            <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" />
+                            <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" loading="lazy" decoding="async" />
                           </div>
                         ))}
                       </div>
@@ -1272,8 +1293,8 @@ export default function App() {
                     >
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full border border-google-border flex items-center justify-center overflow-hidden shrink-0">
-                            <img src={review.image} alt={review.name} className="w-full h-full object-cover" />
+                            <div className="w-10 h-10 rounded-full border border-google-border flex items-center justify-center overflow-hidden shrink-0">
+                            <img src={review.image} alt={review.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                           </div>
                           <div>
                             <p className="text-sm font-black tracking-tight">{review.name}</p>
@@ -1857,7 +1878,7 @@ export default function App() {
                   <div className="flex -space-x-4">
                     {[1, 2, 3, 4].map(i => (
                       <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-google-light-grey overflow-hidden shadow-xl ring-2 ring-google-blue/10">
-                        <img src={`https://i.pravatar.cc/150?img=${i + 30}`} alt="Trusted patient" className="w-full h-full object-cover" />
+                        <img src={`https://i.pravatar.cc/150?img=${i + 30}`} alt="Trusted patient" className="w-full h-full object-cover" loading="lazy" decoding="async" />
                       </div>
                     ))}
                   </div>
@@ -2836,7 +2857,7 @@ function TestimonialHighlight({
     <div className="bg-white p-8 md:p-12 rounded-[2.5rem] h-full flex flex-col items-center text-center">
       <div className="relative mb-8">
         <div className="w-24 h-24 rounded-[2rem] overflow-hidden border-4 border-google-blue/10 shadow-2xl relative z-10 mx-auto transform rotate-3 hover:rotate-0 transition-transform duration-500">
-          <img src={image} alt={name} className="w-full h-full object-cover" />
+          <img src={image} alt={name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div className="absolute -top-4 -right-4 w-12 h-12 bg-agilus-green/20 rounded-full blur-xl animate-pulse" />
         <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-google-blue/20 rounded-full blur-xl animate-pulse delay-700" />
