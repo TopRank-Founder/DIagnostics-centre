@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Outfit", sans-serif;
+  
+  --color-google-blue: #0081C5;
+  --color-google-grey: #5f6368;
+  --color-google-light-grey: #f8f9fa;
+  --color-google-border: #e8eaed;
+  --color-agilus-blue: #0081C5;
+  --color-agilus-green: #76BC21;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-[#202124] font-sans antialiased selection:bg-google-blue selection:text-white;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.gmb-button {
+  @apply flex flex-col items-center justify-center p-3 rounded-xl hover:bg-google-light-grey transition-all duration-200 text-google-blue active:scale-95 touch-manipulation;
+}
+
+.gmb-action-icon {
+  @apply w-6 h-6 mb-1.5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@layer utilities {
+  .premium-shadow {
+    box-shadow: 0 30px 60px -12px rgba(0,0,0,0.15), 0 18px 36px -18px rgba(0,0,0,0.2);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255,255,255,0.4);
+  }
+}
