@@ -442,7 +442,7 @@ export default function App() {
       "name": "SRL Diagnostics Lab Mohali / Agilus Diagnostics",
       "alternateName": "Agilus Diagnostics Mohali Sector 69",
       "description": "NABL Accredited premium pathology lab in Mohali. 24/7 Home Blood Sample Collection, Wellness Packages, and 3000+ specialized tests.",
-      "url": window.location.href,
+      "url": "https://www.agilusdiagnostics.com/",
       "logo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHu6TqEOOin4neExE5u0dvA46IgHsNbp06tv7KCprrGpPkYmyzTuH6dlbFy5oug9NSUhMKU3CQuvT8sqwqTOPf-mUD470_B24edMLjwZ91kLK9_F7_tAAbDkGIw8BXEAyvgied8jskoHh4",
       "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHu6TqEOOin4neExE5u0dvA46IgHsNbp06tv7KCprrGpPkYmyzTuH6dlbFy5oug9NSUhMKU3CQuvT8sqwqTOPf-mUD470_B24edMLjwZ91kLK9_F7_tAAbDkGIw8BXEAyvgied8jskoHh4",
       "telephone": "+9115459115",
@@ -477,7 +477,7 @@ export default function App() {
 
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.innerHTML = JSON.stringify(schemaData);
+    script.textContent = JSON.stringify(schemaData);
     document.head.appendChild(script);
 
     // Track page view
